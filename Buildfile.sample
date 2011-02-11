@@ -1,4 +1,4 @@
-require File.expand_path('../frameworks/jasmine/builders/jasmine_builder', __FILE__)
+require File.expand_path('../frameworks/jasmine-sproutcore/builders/jasmine_builder', __FILE__)
 
 config :all, :required => :sproutcore
 
