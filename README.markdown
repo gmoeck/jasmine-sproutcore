@@ -3,7 +3,7 @@
 
 jasmine-sproutcore provides two tools for integrating [Jasmine](http://pivotal.github.com/jasmine/) with the [Sproutcore](http://github.com/sproutcore/sproutcore) framework.
   
-- a Sproutcore framework that should be a drop-in replace QUnit for testing
+- a Sproutcore framework that should be a drop-in replacement of QUnit with Jasmine for testing
 - a set of helpers for doing things like click in integration tests
   
 #Installation
@@ -44,6 +44,8 @@ clickOn takes a css selector, and does the same as if you normally clicked the e
 
 fillIn takes a css selector, and a value, and fills in that field with the value.
 
+##Thanks To
+Lauri Fjällström for the initial poke in the right direction with changing the build
 ##License:
 (The MIT License)
 
