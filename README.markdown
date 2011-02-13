@@ -17,7 +17,7 @@ To setup jasmine-sproutcore to work in your SproutCore project, we need to add t
   
 Once this has been added to your application, you need to modify your buildfile to use the framework. If you have not previously modified your buildfile, you can just use the sample buildfile from jasmine-sproutcore by doing the following from within your frameworks folder:
 
-    mv jasmine-sproutcore/Buildfile.sample ../Buildfile
+    cp jasmine-sproutcore/Buildfile.sample ../Buildfile
 
 If you have previously modified your buildfile, then you need to further modify it to include the following:
 
