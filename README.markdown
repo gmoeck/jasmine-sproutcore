@@ -33,6 +33,16 @@ If you have previously modified your buildfile, then you need to further modify 
   
 You can now write your tests the same way that you normally would using qunit, except in Jasmine. 
 
+##Running Your Tests
+You can run your test the same way you would run your QUnit tests, which is through the build server. You can access your tests at:
+
+    http://localhost:4020/YOUR_APP_NAME_HERE/en/current/tests.html
+
+What I usually like to do though is to create a folder for integration tests within my tests folder, and a folder for unit tests. Then I can run them separately with these two urls:
+
+    http://localhost:4020/YOUR_APP_NAME_HERE/en/current/tests/integration.html
+    http://localhost:4020/tic-tac-toe/en/current/tests/unit.html
+    
 ##Integration Helpers
 When your using Jasmine to write integration tests, you have to account for the Sproutcore way of handling events. For example, in Sproutcore a click event is not the native click, but a mouse up, followed by a mouse down. In order to help to test this, jasmine-sproutcore also provides a layer of abstraction enable you to think strictly on a browser level. The following helpers are currently available:
 
