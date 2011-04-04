@@ -15,7 +15,7 @@ function fillIn(selector, value) {
     'n': 78,'o': 79,'p': 80,'q': 81,'r': 82,'s': 83,'t': 84,'u': 85,'v': 86,'w': 87,'x': 88,'y': 89,'z': 90
   };
   SC.RunLoop.begin();
-  var target = SC.CoreQuery(SC.CoreQuery(selector)[1]);
+  var target = SC.CoreQuery(selector);
   if(target.length == 0) throw new Error('Could not find ' + selector + ' on the page');
   clickOn(selector);
   value.split('').forEach(function(str) {
@@ -38,8 +38,6 @@ function fillIn(selector, value) {
     var event = SC.Event.simulateEvent(target, 'keyup', keyDownKeyUpAttributes);
     SC.Event.trigger(target, 'keyup', event);
   });
-  // });
-  // target.val(value);
   SC.RunLoop.end();
 }
 
