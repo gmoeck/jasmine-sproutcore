@@ -1,4 +1,4 @@
-if(setupApplication == undefined){
+if(typeof(setupApplication) === undefined){
   setupApplication = function() {
   };
 }
