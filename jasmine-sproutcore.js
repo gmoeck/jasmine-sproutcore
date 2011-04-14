@@ -23,12 +23,17 @@ var Then = function(description, specDefinitions) {
     specDefinitions(WebPage.Page.create({selector: 'body'}));
   });
 };
+var context = function(description, specDefinitions) {
+  return jasmine.getEnv().context(description, specDefinitions);
+};
+
 
 jasmine.Env.prototype.Scenario = jasmine.Env.prototype.describe;
 jasmine.Env.prototype.Given    = jasmine.Env.prototype.describe;
 jasmine.Env.prototype.When     = jasmine.Env.prototype.describe;
 jasmine.Env.prototype.And      = jasmine.Env.prototype.describe;
 jasmine.Env.prototype.Then     = jasmine.Env.prototype.it;
+jasmine.Env.prototype.context  = jasmine.Env.prototype.describe;
 
 
 var WebPage = {
@@ -129,3 +134,4 @@ jasmine.Matchers.prototype.toHaveContent = function(content) {
 
   return this.actual.hasContent(content) >= 0;
 };
+
