@@ -132,6 +132,6 @@ jasmine.Matchers.prototype.toHaveContent = function(content) {
     ];
   };
 
-  return this.actual.hasContent(content) >= 0;
+  return this.actual.hasContent(content);
 };
 
