@@ -2,15 +2,20 @@ var JasmineSproutcore = {
   Page: SC.Object.extend({
     html: function() {
       var selector = this.get('selector');
-      return SC.CoreQuery(selector).html();
-    }.property('selection'),
+      queryObject = SC.CoreQuery(selector);
+      if(queryObject.length == 0) throw new Error('ERROR: Could not find ' + selector + ' on the page');
+      if(queryObject.length > 1) throw new Error('ERROR: Page has multiple elements that match ' + selector);
+      return queryObject.html();
+    }.property('selector'),
 
     hasContent: function(content) {
       return this.get('html').indexOf(content) >= 0;
     },
 
     within: function(selector, callback) {
-      this.set('selection', selector);
+      SC.RunLoop.begin();
+      this.set('selector', selector);
+      SC.RunLoop.end();
       var page = this;
       callback.apply(page, [page]);
     },
