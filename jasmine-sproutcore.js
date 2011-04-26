@@ -65,6 +65,14 @@ var WebPage = {
   }
 }
 
+function fillIn(selector, value) {
+  WebPage.fillIn(selector, value);
+}
+
+function clickOn(selector) {
+  WebPage.clickOn(selector);
+}
+
 jasmine.Matchers.prototype.toHaveClass = function(className) {
   this.message = function() {
     return [
