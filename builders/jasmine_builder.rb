@@ -27,7 +27,7 @@ module Jasmine
       end
 
       def js_files
-        ['jasmine', 'jasmine-html', 'jasmine-sproutcore', 'jasmine-runner']
+        ['jasmine', 'jasmine-html', 'jasmine-sproutcore', 'jasmine-matchers', 'jasmine-integration-helpers', 'jasmine-runner']
       end
 
       def js_tag(file_name)
