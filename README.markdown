@@ -4,7 +4,7 @@
 jasmine-sproutcore provides two tools for integrating [Jasmine](http://pivotal.github.com/jasmine/) with the [Sproutcore](http://github.com/sproutcore/sproutcore) framework.
   
 - a Sproutcore framework that should be a drop-in replacement of QUnit with Jasmine for testing
-- a set of helpers for doing things like click in integration tests
+<li><del>a set of helpers for doing things like click in integration tests</del> - please see [Simulo](https://github.com/gmoeck/simulo) for integration tests<li>
   
 #Installation
 
