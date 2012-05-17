@@ -14,7 +14,7 @@ To setup jasmine-sproutcore to work in your SproutCore project, we need to add t
     $ mkdir frameworks # if you don't already have a frameworks folder
     $ cd frameworks
     $ git clone git://github.com/gmoeck/jasmine-sproutcore.git
-  
+
 Once this has been added to your application, you need to modify your buildfile to use the framework. If you have not previously modified your buildfile, you can just use the sample buildfile from jasmine-sproutcore by doing the following from within your frameworks folder:
 
     cp jasmine-sproutcore/Buildfile.sample ../Buildfile
@@ -30,8 +30,8 @@ If you have previously modified your buildfile, then you need to further modify 
       end
     end
 
-  
-You can now write your tests the same way that you normally would using qunit, except in Jasmine. 
+
+You can now write your tests the same way that you normally would using qunit, except in Jasmine.
 
 ##Running Your Tests
 You can run your test the same way you would run your QUnit tests, which is through the build server. You can access your tests at:
@@ -42,7 +42,7 @@ What I usually like to do though is to create a folder for integration tests wit
 
     http://localhost:4020/YOUR_APP_NAME_HERE/en/current/tests/integration.html
     http://localhost:4020/YOUR_APP_NAME_HERE/en/current/tests/unit.html
-    
+
 
 ##Thanks To
 Lauri Fjällström for the initial poke in the right direction with changing the build
